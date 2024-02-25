@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts-Open_Sans/OpenSans-Regular.woff2") format("woff2"),
+    url("fonts-Open_Sans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #fff;
+}
+
+.nav_container {
+  display: block;
+  width: 100%;
+  min-height: 20vh;
+  background-image: linear-gradient(
+      rgba(151, 151, 151, 1),
+      rgba(85, 150, 255, 1)
+    ),
+    url(./img/Bitmap.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.nav_content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 30rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav_header {
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 42rem;
+  background-color: #fff;
+  margin: 1rem auto 2rem;
+  padding: 4rem 3rem 7rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 7rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.input_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3efef;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0.3rem;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem 2rem;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 1rem 1.2rem;
+  background-color: #979797;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+button img {
+  height: 1rem;
+}
+
+ul li {
+  display: flex;
+  list-style: none;
+  font-size: 1.6rem;
+  gap: 10rem;
+
+  padding: 1rem 2rem;
+  border: 1px solid #979797;
+  user-select: none;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+ul li.checked {
+  color: #000;
+  text-decoration: line-through;
+}
+
+ul li span {
+  position: absolute;
+  justify-items: end;
+  font-size: 2.6rem;
+  color: #000;
+  top: 7%;
+  right: 2%;
+  cursor: pointer;
+}
+
+ul li span:hover {
+  color: red;
+}
+
+@media (max-width: 40rem) {
+  .nav_content {
+    top: 13%;
+    gap: 20rem;
+  }
+}

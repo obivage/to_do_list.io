@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To_do application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <navigation class="nav_container">
+        <nav class="nav_content">
+          <h1 class="nav_header">TODO</h1>
+          <img
+            src="./icon/Combined_Shape.png"
+            alt="star icon"
+            class="star_icon"
+          />
+        </nav>
+      </navigation>
+
+      <div class="container">
+        <div class="input_content">
+          <input type="text" id="input_text" placeholder="Create a new todo…" />
+          <button onclick="addTask()" id="input_btn">
+            <img src="./icon/Path.png" alt="good mark icon" />
+          </button>
+        </div>
+        <ul id="ul_container">
+          <!-- <li class="checked">
+        task 1
+          </li>
+          -->
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
